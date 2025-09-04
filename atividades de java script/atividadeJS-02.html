@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>estudo de java script</title>
+    
+</head>
+<body> 
+    <button onclick="Clique(window.prompt('Qual o seu nome?'))">Clique aqui</button>
+ <script>
+    function Clique(nome){
+       window.alert(`Olá, ${nome} é um nome... intrigante!`);
+       var idade = window.prompt('Qual a sua idade?');
+       window.alert(`Você tem ${idade} anos.`);
+    }
+ </script>
+<!-- ...
+ temos esse metodo "window", mas ele pode dar problema, então use o
+ <script>
+    function Clique(nome)
+       let nome = window.alert(`Olá, ${nome} é um nome... intrigante!`);
+       let idade = window.prompt('Qual a sua idade?');
+       let idade = window.alert(`Você tem ${idade} anos.`);
+           </script>
+;... -->
+<p><a href=""></a></p>
+</body>
+    
+</html>
