@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+</head>
+<body>
+   <h1>clique aqui!</h2>
+     <button onclick="Contador()">verificar</button>
+    <p id="resultado"></p>
+    <script>
+        let contador = 0;
+        function Contador() {
+            contador++;
+            let resposta = document.getElementById('resultado');
+            resposta.innerHTML = `Você clicou ${contador} vezes!`;
+        }
+    </script>
+</body>
+</html>

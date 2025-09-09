@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionais</title>
+</head>
+<body>
+    <h1>sua idade</h1>
+    <button onclick="idade()">verificar maior idade</button>
+    <p id="idade"></p>
+<script>
+ function idade() {
+     let idade = window.prompt('Qual a sua idade?');
+     let resposta = document.getElementById('idade');
+     if (idade>=18) {
+        resposta.innerHTML = 'você é coroa já hein';
+        }
+     if (idade<=30) {
+         resposta.innerHTML = 'você é maior de idade';
+     }
+    }
+</script>
+</body>
+</html>
