@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica 02 interagindo com a interface</title>
+</head>
+<body>
+    <h1>interagindo com a interface</h1>
+    <button onclick="inicio()">comece aqui!</button>
+    <section id="resposta">
+        <p>a resposta vai ficar aqui!</p>
+    </section>
+    
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual o seu nome?');
+            let solucao = document.getElementById('resposta');
+            solucao.innerHTML = `<p>o nome de usuario é ${nome}</p>`;
+        }
+    </script>
+</body>
+</html>
