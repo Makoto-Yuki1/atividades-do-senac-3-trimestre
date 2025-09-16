@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>temperatura</h1>
+
+<button onclick="contador()">converter temperatura</button>
+    <p id="resultado"></p>
+<script>
+ function contador() {
+     let celsius = Number(window.prompt('digite a temperatura em celsius'));
+        let kelvin = celsius + 273.15;
+        let Fahrenheit = (celsius * 9/5) + 32;
+        let res = document.getElementById('resultado');
+        res.innerHTML = `<p>A temperatura de ${celsius}, corresponde a:</p>`;
+        res.innerHTML += `<p>${kelvin} K</p>`;
+        res.innerHTML += `<p>${Fahrenheit } °F</p>`;
+ }
+</script>
+</body>
+</html>

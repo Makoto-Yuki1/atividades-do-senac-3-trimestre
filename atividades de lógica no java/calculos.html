@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>kilometragem</h1>
+    <button onclick="contador()">converter distância</button>
+    <p id="resultado"></p>
+<script>
+ function contador() {
+     let metragem = window.prompt('digite a distância em metros');
+     let km = metragem / 1000;
+        let hm = metragem / 100;
+        let dam = metragem / 10;
+        let dm = metragem * 10;
+        let cm = metragem * 100;
+        let mm = metragem * 1000;
+        let res = document.getElementById('resultado');
+        res.innerHTML = `<p>A distância de ${metragem} metros, corresponde a:</p>`;
+        res.innerHTML += `<p>${km} quilômetros</p>`;
+        res.innerHTML += `<p>${hm} hectômetros</p>`;
+        res.innerHTML += `<p>${dam} decâmetros</p>`;
+        res.innerHTML += `<p>${dm} decímetros</p>`;
+        res.innerHTML += `<p>${cm} centímetros</p>`;
+        res.innerHTML += `<p>${mm} milímetros</p>`;
+ }
+
+</script>
+</body>
+</html>
